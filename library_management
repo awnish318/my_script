@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Mini libray management using shell script
+echo
+echo "Welcome to mini  library management"
+echo
+echo "please enter name of your library"
+read libraryName;
+echo
+mkdir $libraryName
+
+mkdir $libraryName/books $libraryName/students $libraryName/teachers $libraryName/other_staffs
+
+touch $libraryName/books/books.txt
+touch $libraryName/students/students.txt
+touch $libraryName/teachers/teachers.txt
+touch $libraryName/other_staffs/staffs.txt
+echo
+ls -ltr
+echo
+
+echo "Congratulation your library $libraryName" has been created.
+

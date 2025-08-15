@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#creating signup page using shell scripting
+
+echo
+echo "welcome to signup page"
+echo
+
+echo "Please enter your name"
+read name
+echo
+echo "please enter your email"
+read email
+echo "please enter your password"
+read password
+echo 
+echo "please rewrite again"
+read repassword
+echo 
+
+if [ "$password" == "$repassword" ];
+then
+    echo "your signup is successfull!"
+    echo "Name:$name"
+    echo "Email:$email"
+else
+    echo "password didn't match. try again"
+fi 
